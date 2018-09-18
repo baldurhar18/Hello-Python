@@ -1,7 +1,5 @@
 #algrim
 #gera upphafsstaðsetningu
-locationx=1
-locationy=1
 #skilgreina hvernig hann hreyfir sig í gegnum kassana með upp,niður og hliðar tökkum
 #nota while lykkju 
 #búa til hvernig hver kassi fyrir sig er(hvernig er hægt að hreyfa sig í honum The player enters:
@@ -10,12 +8,33 @@ locationy=1
 #• s/S for south (down)
 #• w/W for west (left)
 # prenta út victory ef hann lendir í lokakassanum 
-while locationx !=3 or locationy !=1:
-    if locationx == 1 and locationy==1 or locationx==2 and locationy==1:
+locationx=1
+locationy=1
+location = [locationx, locationy]
+while location != [3,1]:
+    location = [locationx, locationy]
+    if location == [1,1] or location ==[2,1]:
         print("You can travel: (N)orth.")
-        locationchange = (input("Direction: "))
-        if locationchange.lower() == "n":
-            locationy += 1
-        else:
-            print("Not a valid direction!")
+        while True:
+            locationchange = input("Direction: ")
+            if locationchange == "n":
+                locationy += 1
+                break
+            else:
+                print("Not a valid direction!")
+    
+    elif location == [1,2]
+        print("You can travel: (N)orth or (E)ast or (S)outh.")
+        while True
+            locationchange = (input("Direction: "))
+            if locationchange.lower() == "n":
+                locationy += 1
+            elif locationchange.lower() == "e":
+                locationx +=1
+            elif locationchange.lower() == "s":
+                locationx -= 1
+            else:
+                print("Not a valid direction!")
+    
+    
     
