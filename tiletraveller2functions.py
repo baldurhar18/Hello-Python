@@ -2,7 +2,9 @@
 1. i think implementation 1 was easier for me to write because that am better and faster writing without functions today.
 2. after i wrote implementation 2(wich took a long time) i think that I2 is much cleaner and much better readable 
 mainly because nr 1 was 78 lines but nr 2 is 
-3. i was able to make 3 functions. the main function wich is 
+3. i was able to make 3 functions. the main function wich includes a while loop similar to the loop in nr 1 
+but in this loop i call the other two functions. one who asks the program wich direction it wants to go and the 
+other function changes where the traveller is.  
 
 """
 def changespilabord(direction, spilabord):
