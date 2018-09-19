@@ -2,7 +2,8 @@
 #gera upphafsstaðsetningu
 #skilgreina hvernig hann hreyfir sig í gegnum kassana með upp,niður og hliðar tökkum
 #nota while lykkju 
-#búa til hvernig hver kassi fyrir sig er(hvernig er hægt að hreyfa sig í honum The player enters:
+#búa til hvernig hver kassi fyrir sig er(hvernig er hægt að hreyfa sig í honum) 
+# The player enters:
 #• n/N for north (up)
 #• e/E for east (right)
 #• s/S for south (down)
@@ -10,8 +11,8 @@
 # prenta út victory ef hann lendir í lokakassanum 
 locationx=1
 locationy=1
-location = [locationx, locationy]
-while location != [3,1]:
+location = [locationx, locationy] 
+while location != [3,1]:              #sigurkassinn
     location = [locationx, locationy]
     if location == [1,1] or location ==[2,1]:
         print("You can travel: (N)orth.")
